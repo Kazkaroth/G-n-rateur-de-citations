@@ -1,37 +1,65 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- De paire avec bootstrap -->
 
-You can use the [editor on GitHub](https://github.com/Kazkaroth/Generateur-de-citations/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+    <title>Générateur de citations</title>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+    <!-- jQuery + Bootstrap + Font Awesome -->
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+            integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+            integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <!-- _________________________________ -->
 
-### Markdown
+</head>
+<body>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<div id="maincont" class="container text-center">
+    <h3>Ma boite a citations</h3>
+    <blockquote class="storageCont">
+        <p class="citation">Citation exemple</p>
+        <footer class="auteur">
+            auteur
+        </footer>
+    </blockquote>
+    <button id="generer" class="btn btn-large btn-success">Générer</button>
+    <button id="ranger" class="btn btn-large btn-primary">Ranger</button>
+</div>
+<div id="savedQuoteBox" class="container text-center">
+    <h3>Ma citation du jour</h3>
 
-```markdown
-Syntax highlighted code block
+    <blockquote class="storageCont">
+        <p class="savedQuote">Citation exemple</p>
+        <footer class="savedAuthor">
+            auteur
+        </footer>
+    </blockquote>
+    <button id="cleaner" class="btn btn-large btn-warning">Nettoyer</button>
+</div>
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
 
-**Bold** and _Italic_ and `Code` text
+<!-- à ajouter:
+ - boite a liste déroulante où seront sauvegarder les citations (+ajout d'un boutons pour nettoyer les citation enregistrées)
 
-[Link](url) and ![Image](src)
-```
+ -Ranger les citations:
+ - Au click enregistrer la citation afficher
+ - Afficher la citation enregistrer dans la Div de stockage
+ - Afficher une nouvelle citation.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Kazkaroth/Generateur-de-citations/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+ -->
